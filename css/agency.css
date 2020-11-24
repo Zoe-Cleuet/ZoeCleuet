@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
+@font-face {
+    font-family: "Champagne & Limousines";
+    src: url("../champagne---limousines/Champagne _ Limousines.ttf") format("truetype");
+}
+
 body {
   overflow-x: hidden;
   font-family: "Josefin Sans", sans-serif;
