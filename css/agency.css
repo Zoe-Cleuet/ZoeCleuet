@@ -9,16 +9,26 @@
     src: url("../champagne---limousines/Champagne _ Limousines.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("../josefin-sans/JosefinSans-Regular.ttf") format("truetype");
+}
+
 body {
   overflow-x: hidden;
   font-family: "Champagne & Limousines", sans-serif;
 }
 
 p {
-  line-height: 1.75;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 75px;
 }
 
 a {
+    font-size: 20px;
+  font-weight: 500;
   color: #770003;
 }
 
@@ -51,10 +61,11 @@ h6 {
 }
 
 .page-section h3.section-subheading {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 75px;
+  margin-top: 5px;
   text-transform: none;
   font-family: "Champagne & Limousines", sans-serif;
 }
@@ -134,12 +145,12 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #770003;
+    color: #770003;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
-  font-weight: 400;
+  font-weight: 700;
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: white;
@@ -194,19 +205,21 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
+  font-size: 26px;
+  font-style: normal;
   line-height: 22px;
   margin-bottom: 25px;
   font-family: "Champagne & Limousines", sans-serif;
+  color: #770003;
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
   font-family: "Champagne & Limousines", sans-serif;
+  color : #770003;
 }
 
 @media (min-width: 768px) {
@@ -215,7 +228,7 @@ header.masthead .intro-text .intro-heading {
     padding-bottom: 375px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 25px;
+    font-size: 30px;
     font-style: normal;
     line-height: 25px;
     margin-bottom: 25px;
@@ -227,7 +240,7 @@ header.masthead .intro-text .intro-heading {
     font-weight: 700;
     line-height: 90px;
     margin-bottom: 50px;
-   font-family: "Champagne & Limousines", sans-serif;
+    font-family: "Champagne & Limousines", sans-serif;
     color : #770003;
   }
 }
@@ -298,7 +311,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   margin: 0;
   font-family: "Champagne & Limousines", sans-serif;
