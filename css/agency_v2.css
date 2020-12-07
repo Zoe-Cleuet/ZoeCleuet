@@ -17,14 +17,14 @@ body {
 }
 
 p {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 75px;
+  font-size: 18px;
+  font-weight: normal;
+  /*line-height: 1.5;*/
+  /*margin-bottom: 75px;*/
 }
 
 a {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #921b31;
 }
@@ -107,12 +107,13 @@ img::-moz-selection {
 
 .btn {
   font-family: "Mulish", sans-serif;
-  font-weight: 700;
+  border-radius: 0%;
+  /*font-weight: 700;*/
 }
 
 .btn-xl {
   font-size: 18px;
-  padding: 20px 40px;
+  padding: 10px 60px;
 }
 
 .btn-primary {
@@ -182,6 +183,7 @@ img::-moz-selection {
     font-size: 1.75em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    font-weight: bold;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
@@ -189,7 +191,8 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: #921b31;
+
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -236,18 +239,18 @@ header.masthead .intro-text .intro-heading {
     padding-bottom: 375px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 30px;
+    font-size: 18px;
     font-style: normal;
-    line-height: 25px;
-    margin-bottom: 25px;
+    /*line-height: 25px;*/
+    /*margin-bottom: 25px;*/
     font-family: "Mulish", sans-serif;
     color: black;
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 90px;
-    font-weight: 700;
-    line-height: 90px;
-    margin-bottom: 50px;
+    font-size: 48px;
+    /*font-weight: 1000;*/
+    /*line-height: 90px;*/
+    /*margin-bottom: 50px;*/
     font-family: "Mulish", sans-serif;
     color : black;
   }
