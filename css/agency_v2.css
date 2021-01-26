@@ -222,7 +222,7 @@ header.masthead {
   background-image: url("../svg/Blob Home.svg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center right;
+  background-position: top right;
   /*background-size: cover;*/
 }
 
@@ -258,8 +258,8 @@ section.skill{
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 350px;
-    padding-bottom: 375px;
+    padding-top: 200px;
+    padding-bottom: 475px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 18px;
