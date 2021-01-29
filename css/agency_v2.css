@@ -10,6 +10,11 @@
     src: url("../Mulish/Mulish-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Mulish-Bold";
+    src: url("../Mulish/static/Mulish-Black.ttf") format("truetype");
+}
+
 
 body {
   overflow-x: hidden;
@@ -20,7 +25,13 @@ p {
   font-size: 18px;
   font-weight: normal;
   /*line-height: 1.5;*/
-  /*margin-bottom: 75px;*/
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+p2 {
+  font-size: 18px;
+  font-weight: normal;
 }
 
 a {
@@ -43,16 +54,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Mulish", sans-serif;
 }
 
 .page-section {
   padding: 100px 0;
+  margin-bottom: 100px;
 }
 
 .page-section h2.section-heading {
-  font-size: 40px;
+  font-size: 38px;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -113,14 +125,44 @@ img::-moz-selection {
 
 .btn-dw {
   font-size: 14px;
-  font-weight: 700;
-  letter-spacing: .05rem;
-  padding: 10px 30px;
+  font-weight: 500;
+  letter-spacing: .01rem;
+  padding: 10px 20px;
 }
 
-.btn-xl {
+.btn-portfolio {
   font-size: 18px;
-  padding: 10px 60px;
+  padding: 10px 20px;
+  margin-top: 80px; 
+  margin-left: 470px; 
+}
+
+.btn-hire {
+  font-size: 14px;
+  padding: 10px 50px;
+  letter-spacing: .05rem;
+}
+
+div#button {
+    position: absolute; 
+    z-index: 1;
+}
+
+div#back {
+    margin-left: 80px;
+    margin-top: 75px;
+}
+
+div#button-portfolio {
+position: absolute; 
+    z-index: 2;
+}
+
+div#back-portfolio {
+    z-index: 1;
+ position: absolute;
+    margin-left: 460px;
+    margin-top: 105px;
 }
 
 .btn-primary {
@@ -208,8 +250,6 @@ img::-moz-selection {
     background-color: #eee;
   }
     
-    
-    
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
@@ -232,56 +272,81 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 26px;
-  font-style: normal;
+  font-size: 18px;
+  font-style: bold;
   line-height: 22px;
+  margin-top: 15px;
   margin-bottom: 25px;
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish-Black", sans-serif;
   color: black;
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 50px;
+  margin-top: 10px;
   margin-bottom: 25px;
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish-Black", sans-serif;
   color : black;
+}
+
+div#heading {
+    position: absolute;
+    z-index: 1;
+}
+
+div#back-heading {
+    margin-left: 75px;
+    margin-top: 48px;
+}
+
+header.masthead .image {
+    float: right;
+    width: 200px; 
+    background-color: #ffb36d;
 }
 
 section.skill{
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: top left;
+  background-position: 0px 300px;
   background-image: url("../svg/Blob Specializing.svg");
 }
 
 @media (min-width: 768px) {
+    header.masthead .image {
+    float: right;
+    width: 400px; 
+    background-color: #ffb36d;
+    }
+    
   header.masthead .intro-text {
-    padding-top: 200px;
+    padding-top: 250px;
     padding-bottom: 475px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 18px;
     font-weight: bold;
+    letter-spacing: .01rem;
     /*font-style: normal;*/
     /*line-height: 25px;*/
-    /*margin-bottom: 25px;*/
+    margin-bottom: 50px;
     font-family: "Mulish", sans-serif;
     color: black;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 48px;
-    /*font-weight: bold;*/
+    font-weight: bold;
     /*line-height: 90px;*/
     /*margin-bottom: 50px;*/
-    font-family: "Mulish", sans-serif;
+    font-family: "Mulish-Bold", inherit;
     color : black;
   }
 }
 
 .service-heading {
-  margin: 15px 0;
+  margin: 0px 0;
   text-transform: none;
 }
 
@@ -584,7 +649,7 @@ section.skill{
 
 @media (min-width: 992px) {
   .timeline > li {
-    min-height: 150px;
+    min-height: 50px;
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
@@ -601,6 +666,7 @@ section.skill{
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
+      
   }
 }
 
@@ -611,6 +677,8 @@ section.skill{
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
   }
+    
+
   .timeline > li .timeline-image {
     width: 170px;
     height: 170px;
@@ -646,63 +714,25 @@ section.skill{
 }
 
 section#contact {
-  /*background-color: #212529;*/
-  margin-left: 400px;
+  margin-bottom: 180px;
   background-image: url("../svg/Illu%20Contact%20Me.svg");
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
+  background-position: 25%;
+  /*background-size: contain;*/
 }
 
 section#contact .section-heading {
- /* color: #fff;*/
+ color: #921b31;
+ padding-bottom: 100px;
+ margin-left: 55%;
 }
 
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-  height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-  height: 248px;
-}
-
-section#contact .form-control:focus {
-  border-color: #770003;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-section#contact ::-webkit-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: "Mulish", sans-serif;
-}
-
-section#contact :-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: "Mulish", sans-serif;
-}
-
-section#contact ::-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: "Mulish", sans-serif;
-}
-
-section#contact :-ms-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: "Mulish", sans-serif;
+section#contact .section-info {
+ color: #696969;
+ font-weight: normal;
+ font-size: 24px;
+ margin-left: 62%;
+ margin-bottom: 30px;
 }
 
 .footer {
@@ -711,18 +741,17 @@ section#contact :-ms-input-placeholder {
   background-color: #1d1c1c;
 }
 
-.footer span.copyright {
-  font-size: 90%;
-  line-height: 40px;
-  text-transform: none;
-  font-family: "Mulish", sans-serif;
+.footer .section-heading{
+  color: #ffb36d;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  letter-spacing: .05rem;
 }
 
-.footer ul.quicklinks {
-  font-size: 90%;
-  line-height: 40px;
-  margin-bottom: 0;
-  text-transform: none;
+.footer .section-copyright {
+  color: #696969;
+  font-size: 12px;
+  font-weight: normal;
   font-family: "Mulish", sans-serif;
 }
 
