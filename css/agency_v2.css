@@ -59,25 +59,38 @@ h6 {
 }
 
 .page-section {
-  padding: 100px 0;
+  padding: 100px 0px;
   margin-bottom: 100px;
 }
 
 .page-section h2.section-heading {
   font-size: 38px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-.page-section h3.section-subheading {
-  font-size: 18px;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 75px;
-  margin-top: 5px;
-  text-transform: none;
+.page-section h2.section-subheading {
+  font-size: 24px;
+  font-weight: bold;
   font-family: "Mulish", sans-serif;
+  color: black;
 }
+
+.page-section h5.section-desc {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Mulish", sans-serif;
+  color: black;
+}
+
+.page-section p3 {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Mulish", sans-serif;
+  color: #696969;
+  letter-spacing: .02rem;
+}
+
 
 @media (min-width: 768px) {
   section {
@@ -108,13 +121,13 @@ img::-moz-selection {
 }
 
 .spz {
-  font-family: "Mulish", sans-serif;
-  font-weight: 700;
+  font-weight: normal;
   background-color: #921b31;
   border-color: #921b31;
+  border-radius: 5px;
   font-size: 18px;
-  padding: 20px 40px;
-  color: white;
+  padding: 20px 50px;
+  margin-right: 2%;
 }
 
 .btn {
@@ -160,7 +173,7 @@ position: absolute;
 
 div#back-portfolio {
     z-index: 1;
- position: absolute;
+    position: absolute;
     margin-left: 460px;
     margin-top: 105px;
 }
@@ -182,7 +195,7 @@ div#back-portfolio {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: transparent;
 }
 
 #mainNav .navbar-toggler {
@@ -537,7 +550,7 @@ section.skill{
 
 .timeline > li .timeline-panel {
   position: relative;
-  float: right;
+  float: left;
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left;
@@ -578,7 +591,7 @@ section.skill{
 }
 
 .timeline > li.timeline-inverted > .timeline-panel {
-  float: right;
+  float:right;
   padding: 0 20px 0 100px;
   text-align: left;
 }
@@ -597,9 +610,6 @@ section.skill{
   border-left-width: 0;
 }
 
-.timeline > li:last-child {
-  margin-bottom: 0;
-}
 
 .timeline .timeline-heading h4 {
   margin-top: 0;
@@ -608,11 +618,6 @@ section.skill{
 
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
-}
-
-.timeline .timeline-body > ul,
-.timeline .timeline-body > p {
-  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -666,7 +671,6 @@ section.skill{
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
-      
   }
 }
 
@@ -675,10 +679,9 @@ section.skill{
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    /*padding: 0 20px 20px 100px;*/
   }
     
-
   .timeline > li .timeline-image {
     width: 170px;
     height: 170px;
